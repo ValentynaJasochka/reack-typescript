@@ -19,5 +19,11 @@ const App: FC<AppProps> = ({title}) => {
     </div>
   );
 }
+function add (a: number, b:number): number {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error('Incorrect date')
+  } else 
+ {return a +b} };
+console.log(add(15, 8));
 
 export default App;
